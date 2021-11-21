@@ -1,0 +1,12 @@
+# import Hero from "hero.graphql"
+# import PageInfo from "base.graphql"
+
+type Results {
+    page_info: PageInfo
+    edges: [Hero]
+}
+
+type Query {
+    hero(id: ID!): Hero
+    heros(name: String, offset: Int, limit:Int): Results
+}

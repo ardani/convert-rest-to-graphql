@@ -1,0 +1,20 @@
+type Item {
+    name: String
+    resourceURI: String
+}
+
+type Thumbnail {
+    path: String
+    extension: String
+}
+
+type Collection {
+    collectionURI: String
+    items: [Item]!
+}
+
+type PageInfo {
+    offset: Int,
+    limit: Int
+    total: Int
+}

@@ -1,0 +1,16 @@
+# import PageInfo from "base.graphql"
+# import Thumbnail from "base.graphql"
+# import Comic from "comic.graphql"
+
+type ComicResults {
+    page_info: PageInfo
+    edges: [Comic]
+}
+
+type Hero {
+    id: ID!
+    name: String
+    description: String,
+    thumbnail: Thumbnail,
+    comics: ComicResults
+}

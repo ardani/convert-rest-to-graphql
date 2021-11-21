@@ -1,0 +1,8 @@
+# import Thumbnail from "base.graphql"
+
+type Comic {
+    id: ID!
+    title: String
+    description: String
+    resourceURI: String
+}
