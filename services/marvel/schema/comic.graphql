@@ -1,8 +1,13 @@
-# import Thumbnail from "base.graphql"
+# import PageInfo from "base.graphql"
 
 type Comic {
     id: ID!
     title: String
     description: String
     resourceURI: String
+}
+
+type ComicResults {
+    page_info: PageInfo
+    edges: [Comic]
 }

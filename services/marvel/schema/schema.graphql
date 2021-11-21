@@ -1,5 +1,6 @@
 # import Hero from "hero.graphql"
 # import PageInfo from "base.graphql"
+# import ComicResults from "comic.graphql"
 
 type Results {
     page_info: PageInfo
